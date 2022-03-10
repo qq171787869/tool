@@ -64,7 +64,7 @@ class Request
 	        }
 	        $response['responseHeader'] = $heads;
 	    } else {
-	        $response['body'] = curl_exec($ch);
+	        $response['body'] = mb_convert_encoding(curl_exec($ch), 'UTF-8', 'UTF-8, GBK, GB2312, BIG5, ASCII');
 	    }
 	    // 是否跟踪重定向页面
 	    if ( $location ) {
