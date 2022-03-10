@@ -1,0 +1,21 @@
+{
+    "name": "qq171787869/tool",
+    "description": "自用的php类库调用工具",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "qq171787869",
+            "email": "171787869@qq.com",
+            "homepage": "https://www.xyg.cool/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "xyg\\tool\\": "src"
+        }
+    }
+}
