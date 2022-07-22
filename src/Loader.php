@@ -16,9 +16,6 @@ class Loader
     // 驱动器句柄
     public static function class($name = '', $isSameParentNamespace = true)
     {
-        if ( PHP_VERSION_ID < 70000 ) {
-            throw new \Exception('PHP版本要>=7.0.0');
-        }
         if ( empty($name) ) {
             throw new \Exception('$name未定义');
         }

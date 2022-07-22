@@ -6,8 +6,10 @@ class Request
 {
 	// 创建私有静态的变量保存该类对象
 	private static $instance = null;
+	
 	// TCP三次握手超时时间，校验目标服务器的过载，下线，或崩溃等状况
 	private $connectTimeout = 5;
+
 	// 接收缓冲完成前需要等待的时间，如果目标是个大文件，则调高数值
 	private $readTimeout = 5;
 
